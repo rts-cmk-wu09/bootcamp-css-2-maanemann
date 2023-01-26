@@ -5,8 +5,45 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
 }
-
 img {
     display: block;
+}
+body {
+    width: 100vw;
+    background-color: rgb(123, 95, 87);
+}
+
+
+/* --- MAIN --- */
+
+main {
+    max-width: 80rem;
+    margin: 0 auto;
+    background-color: bisque;
+}
+
+
+/* --- HEADER --- */
+
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+}
+
+header hr {
+    grid-column: 1 / -1;
+}
+
+#secondary-nav {
+    grid-column: 1 / -1;
+}
+
+#secondary-nav ul {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
 }
